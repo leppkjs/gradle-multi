@@ -1,0 +1,29 @@
+//=================================================================//
+// gradle-multi-web2
+//=================================================================//
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
+/**/
+//processResources { 
+	//from project(':gradle-multi-web').file('src/main/webapp')	
+//	from '/../gradle-multi-web/src/main/webapp/'
+//	into '${buildDir}'
+//}
+
+//war 생성할때 지정된 프로젝트의 war와 합처서 생성한다.
+war {
+	with project(':gradle-multi-web').war
+}
+
+sourceSets.main.resources.srcDir "../gradle-multi-web/main/resources"; 
+
+dependencies {
+	compile project(':gradle-multi-web') {
+		webAppDirName = 'src/main/webapp'
+		dependencies {
+        	compile fileTree(dir: "/WEB-INF/contents")
+        	compile fileTree(dir: "/WEB-INF/static")
+        }
+	}
+}

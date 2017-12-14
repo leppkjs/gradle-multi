@@ -1,0 +1,28 @@
+//=================================================================//
+// gradle-multi-web
+//=================================================================//
+apply plugin: 'war'
+apply plugin: 'java'
+
+bootRepackage {
+	enabled = false
+}
+
+//META-INF/resources 밑으로 웹 리소스 포함되도록 처리
+//jar {
+//	from '/src/main/webapp/'
+//	into '/META-INF/resources/'
+//	exclude("**/application.yml")
+//}
+
+dependencies {
+	compile project(':gradle-multi-core')
+
+	//providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+	
+	compile 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	compile 'javax.servlet:jstl:1.2'
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.boot:spring-boot-starter-security')		
+	testCompile('org.springframework.security:spring-security-test')
+}
