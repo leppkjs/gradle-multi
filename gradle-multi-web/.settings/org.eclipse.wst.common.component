@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
 	<wb-module deploy-name="gradle-multi-web">
 		<property name="context-root" value="gradle-multi-web"/>
-		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
-		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/gradle-multi-core/gradle-multi-core">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>

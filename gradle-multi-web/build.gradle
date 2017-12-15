@@ -2,18 +2,17 @@
 // gradle-multi-web
 //=================================================================//
 apply plugin: 'war'
-apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
 
-bootRepackage {
-	enabled = false
-}
+//webAppDir = "${projectDir}/webapp"
+webAppDirName = "webapp"
 
 //META-INF/resources 밑으로 웹 리소스 포함되도록 처리
-//jar {
-//	from '/src/main/webapp/'
-//	into '/META-INF/resources/'
-//	exclude("**/application.yml")
-//}
+jar {
+	from '/webapp/'
+	into '/META-INF/resources/'
+	exclude("**/application.yml")
+}
 
 dependencies {
 	compile project(':gradle-multi-core')
