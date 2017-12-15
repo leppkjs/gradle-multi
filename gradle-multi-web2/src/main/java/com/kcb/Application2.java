@@ -30,7 +30,7 @@ public class Application2 extends SpringBootServletInitializer {
 			
 			@Override
 			public void customize(ConfigurableEmbeddedServletContainer container) {
-				container.setDocumentRoot(new File("webapp"));
+				container.setDocumentRoot(new File("build/resources/main"));
 				
 			}
 		};

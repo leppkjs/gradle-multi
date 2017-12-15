@@ -4,14 +4,19 @@
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
 
-/**/
+/*
+ * 웹어플리케이션 루트 디렉토리 설정
+ */
+webAppDirName = "webapp"
+
+/*
+ * processResources 시점에 상위 웹어플리케이션의 리소스를 빌드디렉토리로 가져온다.
+ */
 processResources { 
-	//from project(':gradle-multi-web').file('src/main/webapp')	
-	from '/../gradle-multi-web/webapp/'
+	from project(':gradle-multi-web').file('webapp'), file('webapp')
 	into '${buildDir}'
 }
 
-webAppDirName = "webapp"
 
 //war 생성할때 지정된 프로젝트의 war와 합처서 생성한다.
 war {

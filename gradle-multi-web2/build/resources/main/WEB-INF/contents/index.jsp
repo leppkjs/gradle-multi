@@ -7,8 +7,7 @@
 <title>Gradle Dependency Test</title>
 </head>
 <body>
-	<h1>web1</h1>
+	<h1>web2</h1>
 	${name}
-	<img src="../static/image/common.png" />
 </body>
 </html>

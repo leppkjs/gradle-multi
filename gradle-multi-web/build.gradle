@@ -4,7 +4,9 @@
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
 
-//webAppDir = "${projectDir}/webapp"
+/*
+ * 웹어플리케이션 루트 디렉토리 설정
+ */
 webAppDirName = "webapp"
 
 //META-INF/resources 밑으로 웹 리소스 포함되도록 처리
