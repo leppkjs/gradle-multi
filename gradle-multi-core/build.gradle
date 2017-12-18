@@ -6,6 +6,9 @@ bootRepackage {
 	enabled = false
 }
 
+/**
+ * 프로젝트 의존성 설정
+ */
 dependencies {	
 	compile('org.springframework.boot:spring-boot-starter')
 	//compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.1')

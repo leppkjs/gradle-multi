@@ -7,4 +7,4 @@
 (_) (_)       (_) (_)(_)
                         
                         
- :: ML-CSS K¤ýAI Application Server ::        (v1.0.0.RELEASE)
+ :: ML-CSS K-AI Application Server ::        (v1.0.0.RELEASE)
