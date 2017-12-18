@@ -14,7 +14,7 @@ public class BoardController {
 		return "hello~~~!!!...";
 	}
 	
-	@RequestMapping("/jsp")
+	@RequestMapping("/jsp1")
 	public String jspPage(Model model){
 		model.addAttribute("name","hello springBoot1234");
 		return "index";
@@ -22,12 +22,6 @@ public class BoardController {
 	
 	@RequestMapping("/jsp2")
 	public String jspPage2(Model model){
-		model.addAttribute("data","web dependency..");
-		return "common";
-	}
-	
-	@RequestMapping("/jsp3")
-	public String jspPage3(Model model){
 		model.addAttribute("data","web dependency..");
 		return "common";
 	}

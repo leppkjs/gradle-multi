@@ -4,49 +4,13 @@
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
 
-/*
- * 웹어플리케이션 루트 디렉토리 설정
- */
-//webAppDirName = "webapp"
-
-/*
- * processResources 시점에 상위 웹어플리케이션의 리소스를 빌드디렉토리로 가져온다.
- */
-//processResources { 
-//	from project(':gradle-multi-web').file('webapp'), file('webapp')
-//	into '${buildDir}'
-//}
-
-//war 생성할때 지정된 프로젝트의 war와 합처서 생성한다.
-war {
-	with project(':gradle-multi-web').war
-}
+webAppDirName="src/main/resources/META-INF/resources"
 
 /**
  * Gradle WTP Facet의 기본설정을 변경한다.
  */
 eclipse {
     wtp {
-    	component {
-            file {
-				/*
-                withXml { provider ->
-                    def module = provider.asNode().'wb-module'
-                    module.'dependent-module'.findAll { it.@'handle'.startsWith('module:/resource/gradle-multi-web') }.each { entry ->
-                        entry.@'handle' = entry.@'handle'.replaceAll('module:/overlay', 'module:/resource')
-                        entry.'dependency-type'.each {
-                            it.value = 'consumes'
-                        }
-                    }
-                }
-                */
-                whenMerged { component ->
-                    // overlay할 WAR 프로젝트들만 밑에 나열한다.
-                    //component.wbModuleEntries += new org.gradle.plugins.ide.eclipse.model.WbResource('/', 'module:/resource/gradle-multi-web/gradle-multi-web/webapp?includes=**/**&excludes=META-INF/MANIFEST.MF')
-                }
-            }
-        }
-        
         facet {
             facet name: 'jst.web', version: '3.1'
             facet name: 'java', version: '1.8'
@@ -54,6 +18,12 @@ eclipse {
         }
         
     }
+}
+jar {
+	from 'src/main/resources/META-INF/resources'
+}
+war {
+	from 'src/main/resources/META-INF/resources'
 }
 
 dependencies {
