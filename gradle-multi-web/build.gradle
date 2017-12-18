@@ -7,13 +7,26 @@ apply plugin: 'eclipse-wtp'
 /*
  * 웹어플리케이션 루트 디렉토리 설정
  */
-webAppDirName = "webapp"
+//webAppDirName = "webapp"
 
 //META-INF/resources 밑으로 웹 리소스 포함되도록 처리
-jar {
-	from '/webapp/'
-	into '/META-INF/resources/'
-	exclude("**/application.yml")
+//jar {
+//	from '/webapp/'
+//	into '/META-INF/resources/'
+//	exclude("**/application.yml")
+//}
+
+/**
+ * Gradle WTP Facet의 기본설정을 변경한다.
+ */
+eclipse {
+    wtp {
+        facet {
+            facet name: 'jst.web', version: '3.1'
+            facet name: 'java', version: '1.8'
+            facet name: 'wst.jsdt.web', version: '1.0'
+        }
+    }
 }
 
 dependencies {

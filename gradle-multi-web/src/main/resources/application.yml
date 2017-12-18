@@ -4,9 +4,9 @@ spring:
     - dev
   mvc:
     view:
-      prefix: "/WEB-INF/contents/"
+      prefix: "/WEB-INF/jsp/"
       suffix: ".jsp"
-   
+      
 //  datasource:
 //    type: com.zaxxer.hikari.HikariDataSource
 //    driver-class-name: com.mysql.jdbc.Driver
@@ -21,3 +21,12 @@ spring:
 security:
   basic:
     enabled: false  
+    
+    
+server:
+  jsp-servlet:
+    init-parameters:
+      development: true
+  tomcat:
+    uri-encoding: UTF-8
+

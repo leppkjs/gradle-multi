@@ -24,16 +24,17 @@ public class Application2 extends SpringBootServletInitializer {
 		SpringApplication.run(Application2.class, args);
 	}
 	
+	//TODO 스프링부트 임베디드 톰켓한테 강제로 도큐먼트루트를 바라보게 하는 방법
+	/*
 	@Bean
 	public EmbeddedServletContainerCustomizer documentRootConfigurer() {
 	    return new EmbeddedServletContainerCustomizer() {
-			
-			@Override
+	    	@Override
 			public void customize(ConfigurableEmbeddedServletContainer container) {
 				container.setDocumentRoot(new File("build/resources/main"));
 				
 			}
 		};
-
 	}
+	*/
 }
