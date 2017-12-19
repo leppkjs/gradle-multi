@@ -1,0 +1,39 @@
+//=================================================================//
+// gradle-multi-web3
+//=================================================================//
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
+/**
+ * Gradle WTP Facet의 기본설정을 변경한다.
+ */
+eclipse {
+    wtp {
+        facet {
+            facet name: 'jst.web', version: '3.1'
+            facet name: 'java', version: '1.8'
+            facet name: 'wst.jsdt.web', version: '1.0'
+        }
+        
+    }
+}
+
+/*
+ * jar 실행시 리소스 자원을 패키징
+ */
+jar {
+	from 'src/main/resources/META-INF/resources'
+}
+/*
+ * war 실행시 리소스 자원을 패키징
+ */
+war {
+	from 'src/main/resources/META-INF/resources'
+}
+
+/**
+ * 프로젝트 의존성 설정
+ */
+dependencies {
+	compile project(':gradle-multi-web')
+}
