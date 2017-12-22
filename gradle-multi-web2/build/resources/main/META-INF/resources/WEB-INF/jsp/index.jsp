@@ -6,12 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Gradle Dependency Test</title>
 </head>
-<style type="text/css" src="css/common.css"></style>
+<link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+
 <body>
-	<h1>web2</h1>
-	${name}
-	<img src="image/common.png" />
-	
+	<div class="theme1">
+		<h1>web222222222222222222</h1>
+		${name}
+		<img src="image/common.png" />
+	</div>
 	<script type="text/javascript" src="javascript/common.js"></script>
 </body>
 </html>

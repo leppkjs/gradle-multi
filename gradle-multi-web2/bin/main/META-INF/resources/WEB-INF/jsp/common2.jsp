@@ -7,7 +7,7 @@
 <title>Gradle Dependency Test</title>
 </head>
 <body>
-	<h1>web1-common</h1>
+	<h1>web2-common2222222222222222222222</h1>
 	${data}
 </body>
 </html>

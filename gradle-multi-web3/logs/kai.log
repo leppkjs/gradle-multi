@@ -1,40 +1,40 @@
-17:29:32.798 INFO  com.kcb.Application3 - Starting Application3 on VI117012-001 with PID 7384 (C:\DEV-Studio\workSpaces\gradle-multi\gradle-multi-web3\bin started by O117012 in C:\DEV-Studio\workSpaces\gradle-multi\gradle-multi-web3)
-17:29:32.813 DEBUG com.kcb.Application3 - Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
-17:29:32.813 INFO  com.kcb.Application3 - The following profiles are active: dev
-17:29:32.907 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ff4931d: startup date [Tue Dec 19 17:29:32 KST 2017]; root of context hierarchy
-17:29:35.548 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 4242 (http)
-17:29:35.579 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-17:29:35.579 INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
-17:29:35.986 INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-17:29:36.017 INFO  o.a.c.c.C.[.[.[/kai-server] - Initializing Spring embedded WebApplicationContext
-17:29:36.018 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3111 ms
-17:29:36.393 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-17:29:36.393 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-17:29:36.393 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-17:29:36.393 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-17:29:36.393 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
-17:29:36.393 INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-17:29:37.139 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ff4931d: startup date [Tue Dec 19 17:29:32 KST 2017]; root of context hierarchy
-17:29:37.281 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/jsp1]}" onto public java.lang.String com.kcb.web.controller.BoardController.jspPage(org.springframework.ui.Model)
-17:29:37.281 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kcb.web.controller.BoardController.toHome()
-17:29:37.281 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/jsp2]}" onto public java.lang.String com.kcb.web.controller.BoardController.jspPage2(org.springframework.ui.Model)
-17:29:37.297 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-17:29:37.297 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-17:29:37.359 INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-17:29:37.359 INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-17:29:37.453 INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-17:29:37.889 INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+11:27:39.226 INFO  com.kcb.Application3 - Starting Application3 on VI117012-001 with PID 7684 (C:\DEV-Studio\workSpaces\gradle-multi\gradle-multi-web3\bin started by O117012 in C:\DEV-Studio\workSpaces\gradle-multi\gradle-multi-web3)
+11:27:39.257 DEBUG com.kcb.Application3 - Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+11:27:39.257 INFO  com.kcb.Application3 - The following profiles are active: dev
+11:27:39.413 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61322f9d: startup date [Thu Dec 21 11:27:39 GMT+09:00 2017]; root of context hierarchy
+11:27:41.942 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 4242 (http)
+11:27:41.973 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:27:41.989 INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+11:27:42.364 INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+11:27:42.380 INFO  o.a.c.c.C.[.[.[/kai-server] - Initializing Spring embedded WebApplicationContext
+11:27:42.380 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2967 ms
+11:27:42.754 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+11:27:42.754 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+11:27:42.754 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+11:27:42.754 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+11:27:42.770 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+11:27:42.770 INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+11:27:43.503 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61322f9d: startup date [Thu Dec 21 11:27:39 GMT+09:00 2017]; root of context hierarchy
+11:27:43.629 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/jsp2]}" onto public java.lang.String com.kcb.web.controller.BoardController.jspPage2(org.springframework.ui.Model)
+11:27:43.629 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kcb.web.controller.BoardController.toHome()
+11:27:43.629 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/jsp1]}" onto public java.lang.String com.kcb.web.controller.BoardController.jspPage(org.springframework.ui.Model)
+11:27:43.629 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+11:27:43.629 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+11:27:43.676 INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:27:43.676 INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:27:43.754 INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:27:44.175 INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
 
-Using default security password: 20f4e479-c2bd-4699-8fee-c2a39cce6f3b
+Using default security password: cb06f66d-3699-46c6-9a38-70db1b600d09
 
-17:29:37.999 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
-17:29:38.155 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@353efdbf, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55cff952, org.springframework.security.web.context.SecurityContextPersistenceFilter@3766c667, org.springframework.security.web.header.HeaderWriterFilter@67001148, org.springframework.security.web.csrf.CsrfFilter@74fe5966, org.springframework.security.web.authentication.logout.LogoutFilter@1965539b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55b8dbda, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@529cfee5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@660591fb, org.springframework.security.web.session.SessionManagementFilter@26dcd8c0, org.springframework.security.web.access.ExceptionTranslationFilter@65004ff6]
-17:29:38.353 INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-17:29:38.478 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 4242 (http)
-17:29:38.493 INFO  com.kcb.Application3 - Started Application3 in 6.674 seconds (JVM running for 8.124)
-17:29:44.581 INFO  o.a.c.c.C.[.[.[/kai-server] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-17:29:44.582 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-17:29:44.634 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 51 ms
-17:33:29.947 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-17:33:29.947 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ff4931d: startup date [Tue Dec 19 17:29:32 KST 2017]; root of context hierarchy
-17:33:29.947 INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+11:27:44.284 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+11:27:44.425 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@7aad3f7d, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f667ad1, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cbb3d3b, org.springframework.security.web.header.HeaderWriterFilter@444548a0, org.springframework.security.web.csrf.CsrfFilter@629f066f, org.springframework.security.web.authentication.logout.LogoutFilter@68ba310d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ca0863b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fc07784, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@566d0c69, org.springframework.security.web.session.SessionManagementFilter@5b22b970, org.springframework.security.web.access.ExceptionTranslationFilter@73a00e09]
+11:27:44.596 INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+11:27:44.707 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 4242 (http)
+11:27:44.723 INFO  com.kcb.Application3 - Started Application3 in 6.461 seconds (JVM running for 7.747)
+11:27:54.009 INFO  o.a.c.c.C.[.[.[/kai-server] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+11:27:54.010 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+11:27:54.060 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 50 ms
+11:28:13.481 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+11:28:13.481 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61322f9d: startup date [Thu Dec 21 11:27:39 GMT+09:00 2017]; root of context hierarchy
+11:28:13.481 INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

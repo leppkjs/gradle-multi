@@ -26,8 +26,10 @@ public class GradleMultiAppMain {
 	public void run() {
 		List<BoardDto> boardDtoList = boardService.selectList();
 		for (BoardDto boardDto : boardDtoList) {
+			System.out.println("=======================================================");
 			System.out.println("title = " + boardDto.getTitle());
 			System.out.println("content = " + boardDto.getContent());
+			System.out.println("=======================================================");
 		}
 	}
 
