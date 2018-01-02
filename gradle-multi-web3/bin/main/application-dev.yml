@@ -8,11 +8,11 @@
 #
 # ===================================================================
 
-# EMBEDDED SERVER CONFIGURATION (ServerProperties)  ==========================
+# EMBEDDED SERVER CONFIGURATION (ServerProperties)  =================
 server:
   port: 4242
   context-path: /kai-server
 
-## LOGGING ========================================================
+## LOGGING ==========================================================
 logging:
   config: classpath:logback-spring.xml

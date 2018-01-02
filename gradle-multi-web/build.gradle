@@ -23,7 +23,7 @@ eclipse {
 dependencies {
 	compile project(':gradle-multi-core')
 
-	//providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+	providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
 	
 	compile 'org.apache.tomcat.embed:tomcat-embed-jasper'
 	compile 'javax.servlet:jstl:1.2'

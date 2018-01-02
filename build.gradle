@@ -3,12 +3,12 @@
 //=================================================================//
 buildscript {
 	ext {
-		springBootVersion = '1.5.9.RELEASE'
+		springBootVersion = '1.5.6.RELEASE'
 	}
 	repositories {
 		maven{ url 'file://C:/DEV-Studio/bin/.m2/repository' }
-		//mavenCentral()
-		//jcenter()
+		mavenCentral()
+		jcenter()
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -31,8 +31,8 @@ subprojects {
 	sourceCompatibility = 1.8
 	repositories {
 		maven{ url 'file://C:/DEV-Studio/bin/.m2/repository' }
-		//mavenLocal()
-		//mavenCentral()
+		mavenLocal()
+		mavenCentral()
 	}
 	
 	task initSourceFolders {

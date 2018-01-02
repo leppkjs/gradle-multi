@@ -6,9 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
+@RequestMapping("main")
 public class Board2Controller {
 	
-	@RequestMapping("/hello")
+	@RequestMapping("/hello2")
 	@ResponseBody
 	public String toHome() {
 		return "hello~~~!!!...";
@@ -18,7 +19,7 @@ public class Board2Controller {
 	@RequestMapping("/jsp3")
 	public String jspPage3(Model model){
 		model.addAttribute("data","web dependency..");
-		return "common2";
+		return "main/common2";
 	}
 
 }
