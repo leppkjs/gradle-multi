@@ -30,6 +30,8 @@ dependencies {
 	compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
 	compile "org.springframework.boot:spring-boot-starter-security:${springBootVersion}"
 	
+	compile group: 'com.google.guava', name: 'guava', version: '23.0'
+	
 	compile group: 'org.apache.tiles', name: 'tiles-jsp', version: '3.0.8'
 			
 	testCompile "org.springframework.security:spring-security-test"
