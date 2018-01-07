@@ -1,1 +1,0 @@
-<div>copyRight ...</div>

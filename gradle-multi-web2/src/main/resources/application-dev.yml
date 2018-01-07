@@ -12,6 +12,21 @@
 spring:
   messages:
     basename: messages/message-framework, messages/validation, messages/message-web2 
+# H2 Web Console (H2ConsoleProperties) ============================
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+# DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+  datasource:
+    url: jdbc:h2:file:~/test
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+    schema: classpath:import.sql
+
+
     
 # EMBEDDED SERVER CONFIGURATION (ServerProperties) ================
 server:
@@ -21,3 +36,9 @@ server:
 ## LOGGING ========================================================
 logging:
   config: classpath:logback-spring.xml
+  
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  type-aliases-package: com.kcb
+  mapper-locations: classpath:mapper/*.xml
+

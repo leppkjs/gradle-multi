@@ -1,5 +1,7 @@
 package com.kcb;
 
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -8,8 +10,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan("com.kcb")
-public class Application2 extends SpringBootServletInitializer {
-	
+@MapperScan(basePackages = {"com.kcb"})
+public class Application2 extends SpringBootServletInitializer implements CommandLineRunner {
 	@Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(Application2.class);
@@ -18,7 +20,7 @@ public class Application2 extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		SpringApplication.run(Application2.class, args);
 	}
-	
+
 	//TODO 스프링부트 임베디드 톰켓한테 강제로 도큐먼트루트를 바라보게 하는 방법
 	/*
 	@Bean
@@ -32,4 +34,9 @@ public class Application2 extends SpringBootServletInitializer {
 		};
 	}
 	*/
+	
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println("Spring ... Run...");
+	}
 }
